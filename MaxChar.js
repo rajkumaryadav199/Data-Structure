@@ -1,3 +1,4 @@
+/* Return the later whose maximum count in the strings*/
 
 let str="ASCFCDFCCESC";
 
