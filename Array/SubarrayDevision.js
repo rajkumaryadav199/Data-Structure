@@ -21,8 +21,8 @@ function birthday(s, d, m) {
         
     for(let k=m; k<s.length; k++)
     { 
-        console.log(sum ,count,s[k],s[k-1])
-        sum=sum+s[k]-s[k-1]
+        sum+=s[k];
+        sum-=s[k-m];
         
         if(sum===d)
         {
