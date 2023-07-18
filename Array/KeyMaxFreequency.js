@@ -2,7 +2,6 @@
 
 let arr=[1,1,2,2,3,4,5]
 function migratoryBirds(arr) {
-    // Write your code here
     let obj={};
     for( let i=0; i<arr.length ; i++)
     {
@@ -26,6 +25,5 @@ function migratoryBirds(arr) {
           max=obj[k]
       }
   }
- 
   return ans;
 }
