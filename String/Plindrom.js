@@ -14,4 +14,17 @@ while(i<str.length/2)
 return true;
 }
 
-console.log(isPalindrom('12221'))
+function Palindrom(num){
+    let copyNum =num;
+    let reversNum=0;
+    while(copyNum > 0)
+    {
+        const lastDigit=copyNum%10;
+        reversNum = reversNum*10 + lastDigit;
+        copyNum = Math.floor(copyNum/10);
+    }
+    console.log(copyNum, reversNum)
+    return num == reversNum ;
+}
+
+console.log(Palindrom("12521"))
